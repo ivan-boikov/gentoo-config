@@ -38,5 +38,3 @@ tmpfs /var/tmp/portage tmpfs rw,nosuid,noatime,nodev,size=12G,mode=775,uid=porta
 UUID=364f2509-45c3-4a5c-b232-2654160439a2 /media/wdblue ext4 rw,nofail,noatime 0 0
 
 UUID=1c9f0b6a-a8b5-4a7a-959f-821051b35107 /mnt/wdblue0  btrfs noatime,compress-force=zstd,autodefrag,subvol=@          0 0
-
-/run/user/1000/pipewire-0 /tmp/pipewire-0 none bind,rw,user,noauto 0 0

@@ -1,0 +1,60 @@
+# unstable stuff from Gentoo repo
+# last check: 2023-08-19
+mail-mta/proton-mail-bridge ~amd64
+media-video/droidcam ~amd64
+media-sound/spek ~amd64
+www-plugins/lightspark ~amd64
+sys-boot/mokutil ~amd64
+games-util/joystick ~amd64
+sys-fs/archivemount ~amd64
+sys-fs/jmtpfs ~amd64
+# stable oath-toolkit requires old versions of dev-libs/xmlsec, which is annoying for updates
+sys-auth/oath-toolkit ~amd64
+
+app-emulation/wine-proton ~amd64
+games-action/multimc-bin ~amd64
+
+media-video/mpv::vapoursynth ~amd64
+media-libs/vapoursynth ~amd64
+
+www-apps/hugo ~amd64
+
+sys-fs/fragview ~amd64
+
+app-forensics/lynis ~amd64
+
+dev-vcs/git-filter-repo ~amd64
+
+# remote control of players
+mpv-plugin/mpv-mpris ~amd64
+
+# laptop stuff
+x11-apps/igt-gpu-tools ~amd64
+
+
+# GURU
+net-p2p/monero ~amd64
+dev-libs/randomx ~amd64
+dev-libs/supercop ~amd64
+
+app-misc/dragon ~amd64
+
+>=media-sound/ncpamixer-9999 ~amd64 **
+
+games-emulation/citra ~amd64 **
+
+
+# gentoobr
+x11-misc/devour ~amd64
+
+
+# ArchFeh
+>=media-sound/pamixer-9999 **
+
+
+# fem
+app-admin/pass-git-helper ~amd64
+
+
+# ace
+games-util/mangohud ~amd64

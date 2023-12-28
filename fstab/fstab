@@ -1,0 +1,52 @@
+# /etc/fstab: static file system information.
+#
+# noatime turns off atimes for increased performance (atimes normally aren't 
+# needed); notail increases performance of ReiserFS (at the expense of storage 
+# efficiency).  It's safe to drop the noatime options if you want and to 
+# switch between notail / tail freely.
+#
+# The root filesystem should have a pass number of either 0 or 1.
+# All other filesystems should have a pass number of 0 or greater than 1.
+#
+# See the manpage fstab(5) for more information.
+#
+
+# <fs>			<mountpoint>	<type>		<opts>		<dump/pass>
+
+# NOTE: If your BOOT partition is ReiserFS, add the notail option to opts.
+#
+# NOTE: Even though we list ext4 as the type here, it will work with ext2/ext3
+#       filesystems.  This just tells the kernel to use the ext4 driver.
+#
+# NOTE: You can use full paths to devices like /dev/sda3, but it is often
+#       more reliable to use filesystem labels or UUIDs. See your filesystem
+#       documentation for details on setting a label. To obtain the UUID, use
+#       the blkid(8) command.
+
+#LABEL=boot		/boot		ext4		noauto,noatime	1 2
+#UUID=58e72203-57d1-4497-81ad-97655bd56494		/		ext4		noatime		0 1
+#LABEL=swap		none		swap		sw		0 0
+#/dev/cdrom		/mnt/cdrom	auto		noauto,ro	0 0
+
+UUID=B36E-608F	/boot	vfat	noatime	0	2
+
+UUID=6e72e954-c358-495c-90ae-48061ab0cbd8	/		btrfs	noatime,compress-force=zstd,autodefrag,subvol=@	0	1
+UUID=6e72e954-c358-495c-90ae-48061ab0cbd8	/home		btrfs	noatime,compress-force=zstd,autodefrag,subvol=@home	0	2
+UUID=6e72e954-c358-495c-90ae-48061ab0cbd8	/.snapshots	btrfs	noatime,compress-force=zstd,autodefrag,subvol=@snapshots	0	2
+UUID=6e72e954-c358-495c-90ae-48061ab0cbd8	/.swap		btrfs	noatime,subvol=@swap	0	0
+/.swap/swapfile	none	swap	sw,loop	0	0	
+
+# /tmp is not mounted as tmpfs automatically by OpenRC
+tmpfs	/tmp			tmpfs	rw,nosuid,noatime,nodev,size=4G,mode=1777,rootcontext=system_u:object_r:tmp_t	0	0
+
+# speeding up emerges
+tmpfs	/var/tmp/portage	tmpfs	size=8G,uid=portage,gid=portage,mode=775,nosuid,noatime,nodev,rootcontext=system_u:object_r:tmp_t	0	0
+
+# /var/lock is automatically symlinked to /run
+#tmpfs	/var/lock		tmpfs	rw,nosuid,noatime,nodev,size=64M,mode=1777,rootcontext=system_u:object_r:tmp_t	0	0
+# /var/run/ is automatically symlinked to /run
+# /run is mounted as tmpfs automatically by OpenRC
+#tmpfs	/run	tmpfs	mode=0755,nosuid,nodev,rootcontext=system_u:object_r:var_run_t	0	0
+
+UUID=364f2509-45c3-4a5c-b232-2654160439a2	/media/wdblue	ext4	rw,nofail,noatime	0	0
+

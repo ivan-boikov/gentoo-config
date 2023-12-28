@@ -1,0 +1,20 @@
+# obvious overcomplicated crap
+sys-auth/polkit
+sys-apps/systemd
+
+# 6.0 and upwards requires systemd
+>=www-misc/profile-sync-daemon-6.0
+
+# avoiding distcc failures + unneeded recompilation
+sys-devel/binutils
+sys-devel/gcc
+sys-libs/glibc
+sys-devel/llvm
+sys-devel/llvmgold
+sys-devel/clang
+
+# kinda forgot why
+#>=dev-libs/openssl-3.0.10
+
+# for SVP
+>=dev-qt/qtdeclarative-6.0

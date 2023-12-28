@@ -1,0 +1,7 @@
+=sys-devel/binutils-2.40-r5
+=sys-devel/gcc-13.2.1_p20230826
+=sys-libs/glibc-2.37-r7
+# llvm and clang must have same version!
+=sys-devel/llvm-16.0.6
+=sys-devel/llvmgold-16
+=sys-devel/clang-16.0.6

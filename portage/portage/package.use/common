@@ -1,0 +1,38 @@
+app-alternatives/sh dash -bash
+app-shells/dash static
+
+# fuck DRM
+www-client/firefox-bin -gmp-autoupdate
+
+media-video/mpv::vapoursynth vapoursynth
+
+media-video/ffmpeg x264 x265
+
+# VimTex needs synctex to rebuild
+app-text/zathura synctex
+
+mail-client/neomutt notmuch
+
+media-sound/pulseaudio -daemon
+# pipewire-alsa replaces pulseaudio ALSA plugin
+# sound-server replaces pulseaudio daemon
+media-video/pipewire pipewire-alsa sound-server jack-sdk
+
+# allows ssh -X
+x11-base/xorg-server xcsecurity
+
+net-fs/samba client
+
+app-emulation/virt-manager gui
+app-emulation/qemu spice usb usbredir
+
+app-emulation/wine-proton pulseaudio
+virtual/wine proton
+
+sys-libs/zlib minizip
+
+dev-python/PyQt5 -opengl
+
+app-misc/nnn gitstatus
+
+app-text/texlive -cjk l10n_fr

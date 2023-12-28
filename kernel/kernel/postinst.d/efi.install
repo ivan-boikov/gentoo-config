@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# https://forums.gentoo.org/viewtopic-p-8810619.html
+
+ver=${1}
+mkdir -pv /boot/efi/gentoo
+mv -v /boot/config-${ver} /boot/efi/gentoo/config
+mv -v /boot/vmlinuz-${ver} /boot/efi/gentoo/bootx64.efi
+rm -v /boot/*${ver}*

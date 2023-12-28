@@ -23,10 +23,13 @@
 #       documentation for details on setting a label. To obtain the UUID, use
 #       the blkid(8) command.
 
-UUID=A          /boot  vfat noatime                                          0 2
-UUID=B          /      btrfs noatime,compress-force=zstd,autodefrag,subvol=@ 0 1
-UUID=B          /.swap btrfs noatime,subvol=@swap                            0 0
-/.swap/swapfile none   swap sw,loop                                          0 0
+UUID=459cc4ae-8779-4362-92b4-2b5f54c336da /boot       ext2  noatime                                                  0 2
+UUID=D0E2-4312                            /boot/efi   vfat  noatime                                                  0 2
+UUID=7f436ba9-0529-4a6a-8bb2-46f8ef203968 /           btrfs noatime,compress-force=zstd,autodefrag,subvol=@          0 1
+UUID=7f436ba9-0529-4a6a-8bb2-46f8ef203968 /home       btrfs noatime,compress-force=zstd,autodefrag,subvol=@home      0 2
+UUID=7f436ba9-0529-4a6a-8bb2-46f8ef203968 /.snapshots btrfs noatime,compress-force=zstd,autodefrag,subvol=@snapshots 0 2
+UUID=7f436ba9-0529-4a6a-8bb2-46f8ef203968 /.swap      btrfs noatime,subvol=@swap                                     0 0
+/.swap/swapfile                           none        swap  sw,loop                                                  0 0
 
 # /tmp is not mounted as tmpfs automatically by OpenRC
 tmpfs /tmp             tmpfs rw,nosuid,noatime,nodev,size=4G,mode=1777,rootcontext=system_u:object_r:tmp_t                        0 0

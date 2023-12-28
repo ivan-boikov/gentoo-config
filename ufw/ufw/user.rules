@@ -37,6 +37,10 @@
 -A ufw-user-output -p tcp --dport 22 -j ACCEPT
 -A ufw-user-output -p udp --dport 22 -j ACCEPT
 
+### tuple ### allow any 3632 0.0.0.0/0 any 0.0.0.0/0 in
+-A ufw-user-input -p tcp --dport 3632 -j ACCEPT
+-A ufw-user-input -p udp --dport 3632 -j ACCEPT
+
 ### END RULES ###
 
 ### LOGGING ###

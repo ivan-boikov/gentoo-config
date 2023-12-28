@@ -23,15 +23,17 @@
 #       documentation for details on setting a label. To obtain the UUID, use
 #       the blkid(8) command.
 
-UUID=A          /boot  vfat noatime                                          0 2
-UUID=B          /      btrfs noatime,compress-force=zstd,autodefrag,subvol=@ 0 1
-UUID=B          /.swap btrfs noatime,subvol=@swap                            0 0
-/.swap/swapfile none   swap sw,loop                                          0 0
+UUID=B36E-608F                            /boot       vfat  noatime                                                  0 2
+UUID=6e72e954-c358-495c-90ae-48061ab0cbd8 /           btrfs noatime,compress-force=zstd,autodefrag,subvol=@          0 1
+UUID=6e72e954-c358-495c-90ae-48061ab0cbd8 /home       btrfs noatime,compress-force=zstd,autodefrag,subvol=@home      0 2
+UUID=6e72e954-c358-495c-90ae-48061ab0cbd8 /.snapshots btrfs noatime,compress-force=zstd,autodefrag,subvol=@snapshots 0 2
+UUID=6e72e954-c358-495c-90ae-48061ab0cbd8 /.swap      btrfs noatime,subvol=@swap                                     0 0
+/.swap/swapfile                           none        swap  sw,loop                                                  0 0
 
 # /tmp is not mounted as tmpfs automatically by OpenRC
 tmpfs /tmp             tmpfs rw,nosuid,noatime,nodev,size=4G,mode=1777,rootcontext=system_u:object_r:tmp_t                        0 0
 # speeding up emerges
-tmpfs /var/tmp/portage tmpfs rw,nosuid,noatime,nodev,size=4G,mode=775,uid=portage,gid=portage,rootcontext=system_u:object_r:tmp_t 0 0
+tmpfs /var/tmp/portage tmpfs rw,nosuid,noatime,nodev,size=12G,mode=775,uid=portage,gid=portage,rootcontext=system_u:object_r:tmp_t 0 0
 
 UUID=364f2509-45c3-4a5c-b232-2654160439a2 /media/wdblue ext4 rw,nofail,noatime 0 0
 

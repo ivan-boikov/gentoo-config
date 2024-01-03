@@ -39,7 +39,7 @@ dev-libs/supercop ~amd64
 
 app-misc/dragon ~amd64
 
->=media-sound/ncpamixer-9999 ~amd64 **
+media-sound/ncpamixer ~amd64
 
 games-emulation/citra ~amd64 **
 

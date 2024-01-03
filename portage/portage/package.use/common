@@ -38,3 +38,6 @@ app-misc/nnn gitstatus
 app-text/texlive -cjk l10n_fr
 
 sys-kernel/gentoo-kernel hardened
+
+# for an efistub used by dracut
+sys-apps/systemd-utils boot kernel-install

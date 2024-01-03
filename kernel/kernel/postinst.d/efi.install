@@ -5,11 +5,10 @@
 # from https://forums.gentoo.org/viewtopic-t-1128103-start-0.html
 # installkernel script itself runs any executable scripts in /etc/kernel/postinst.d/* with $1 being kernel version, and $2 path to the kernel.
 
-# taken from
-# https://forums.gentoo.org/viewtopic-p-8810619.html
+# adapted from https://forums.gentoo.org/viewtopic-p-8810619.html
 
 ver=${1}
 mkdir -pv "/boot/efi/gentoo"
-mv -v "/boot/config-${ver}" "/boot/efi/gentoo/config"
-mv -v "/boot/vmlinuz-${ver}" "/boot/efi/gentoo/bootx64.efi"
-rm -v /boot/*${ver}*
+cp -v "/boot/config-${ver}" "/boot/efi/gentoo/config"
+cp -v "/boot/vmlinuz-${ver}" "/boot/efi/gentoo/bootx64.efi"
+#rm -v /boot/*${ver}*

@@ -5,7 +5,6 @@ app-arch/atool
 app-arch/p7zip
 app-arch/unrar
 app-crypt/efitools
-app-crypt/sbsigntools
 app-crypt/signify
 app-editors/nano
 app-editors/neovim
@@ -35,8 +34,7 @@ sys-fs/btrfs-progs
 sys-fs/cryptsetup
 sys-fs/dosfstools
 sys-fs/ncdu
-sys-kernel/genkernel
-sys-kernel/gentoo-sources
+sys-kernel/gentoo-kernel
 sys-kernel/linux-firmware
 virtual/cron
 sys-process/htop

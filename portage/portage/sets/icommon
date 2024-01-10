@@ -9,7 +9,7 @@ dev-tex/glossaries
 # email
 mail-client/mutt
 mail-mta/opensmtpd
-app-misc/abook
+app-misc/khard
 net-mail/isync
 www-client/w3m
 
@@ -32,14 +32,16 @@ app-shells/fzf
 app-text/pdftk
 app-text/xournalpp
 app-text/zathura-meta
+app-text/pdfgrep
 dev-qt/qtstyleplugins
 dev-util/android-tools
 dev-util/shellcheck-bin
-dev-util/valgrind
+dev-util/git-filter-repo
 games-util/joystick
 lxde-base/lxappearance
 media-fonts/fontawesome
 media-fonts/fonts-meta
+media-libs/exiftool
 media-gfx/gimp
 media-gfx/imagemagick
 media-gfx/inkscape
@@ -108,3 +110,4 @@ x11-apps/setxkbmap
 x11-apps/xdpyinfo
 x11-apps/xev
 x11-drivers/xf86-input-wacom
+x11-misc/x2x

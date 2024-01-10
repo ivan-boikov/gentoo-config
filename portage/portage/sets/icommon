@@ -36,7 +36,7 @@ app-text/pdfgrep
 dev-qt/qtstyleplugins
 dev-util/android-tools
 dev-util/shellcheck-bin
-dev-util/git-filter-repo
+dev-vcs/git-filter-repo
 games-util/joystick
 lxde-base/lxappearance
 media-fonts/fontawesome

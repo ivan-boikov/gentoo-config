@@ -6,3 +6,4 @@ app-emulation/dxvk
 app-emulation/vkd3d-proton
 dev-util/vulkan-tools
 games-util/mangohud::ace
+x11-misc/vdpauinfo

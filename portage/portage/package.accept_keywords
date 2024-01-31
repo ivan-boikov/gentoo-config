@@ -12,7 +12,14 @@ sys-fs/jmtpfs ~amd64
 sys-auth/oath-toolkit ~amd64
 
 app-emulation/wine-proton ~amd64
+app-emulation/wine-mono ~amd64
 games-action/multimc-bin ~amd64
+
+net-im/telegram-desktop ~amd64
+media-libs/tg_owt ~amd64
+dev-cpp/cppgir ~amd64
+dev-cpp/expected-lite ~amd64
+media-libs/libtgvoip ~amd64
 
 media-video/mpv::vapoursynth ~amd64
 media-libs/vapoursynth ~amd64

@@ -7,3 +7,10 @@ zz-autounmask
 # generated during install
 ufw/ufw/applications.d
 portage/portage/conf-update.d
+
+# way too much default crap I don't care to track
+libvirt
+
+# installed by installkernel = don't care
+kernel/kernel/preinst.d
+

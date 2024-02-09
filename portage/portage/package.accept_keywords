@@ -37,7 +37,7 @@ mpv-plugin/mpv-mpris ~amd64
 
 # laptop stuff
 x11-apps/igt-gpu-tools ~amd64
-
+sys-power/tlp ~amd64
 
 # GURU
 net-p2p/monero ~amd64

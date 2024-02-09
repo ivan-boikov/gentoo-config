@@ -41,3 +41,5 @@ sys-kernel/gentoo-kernel hardened
 
 # for an efistub used by dracut
 sys-apps/systemd-utils boot kernel-install
+# secure boot
+sys-kernel/gentoo-kernel modules-compress modules-sign secureboot

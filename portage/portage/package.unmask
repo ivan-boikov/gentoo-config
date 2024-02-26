@@ -1,4 +1,4 @@
-=sys-devel/binutils-2.41-r3
+=sys-devel/binutils-2.41-r5
 =sys-devel/gcc-13.2.1_p20240113-r1
 =sys-libs/glibc-2.38-r10
 # llvm and clang must have same version!

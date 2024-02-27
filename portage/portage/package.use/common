@@ -38,6 +38,8 @@ app-misc/nnn gitstatus
 app-text/texlive -cjk l10n_fr
 
 sys-kernel/gentoo-kernel hardened
+# 1Gb -> 500Mb
+sys-kernel/linux-firmware compress-xz
 
 # for an efistub used by dracut
 sys-apps/systemd-utils boot kernel-install

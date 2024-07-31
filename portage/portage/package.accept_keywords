@@ -50,3 +50,7 @@ app-admin/pass-git-helper ~amd64
 
 # ace
 games-util/mangohud ~amd64
+
+
+# genfox
+www-misc/arkenfox ~amd64

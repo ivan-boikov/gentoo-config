@@ -55,3 +55,9 @@ games-util/mangohud ~amd64
 
 # genfox
 www-misc/arkenfox ~amd64
+
+
+# ikb-overlay
+# mnamer and its deps
+media-video/mnamer ~amd64
+dev-python/teletype ~amd64

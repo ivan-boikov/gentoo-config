@@ -7,6 +7,7 @@ games-util/joystick ~amd64
 sys-fs/archivemount ~amd64
 sys-fs/jmtpfs ~amd64
 games-action/multimc-bin ~amd64
+www-misc/buku ~amd64
 
 # TG and its deps
 net-im/telegram-desktop ~amd64

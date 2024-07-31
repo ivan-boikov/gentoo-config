@@ -49,3 +49,5 @@ sys-kernel/gentoo-kernel modules-compress modules-sign secureboot
 www-misc/firefox-policy redirect
 
 sys-devel/gcc graphite
+
+media-libs/libv4l utils

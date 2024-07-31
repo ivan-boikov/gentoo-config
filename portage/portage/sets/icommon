@@ -56,7 +56,7 @@ media-sound/pamixer
 media-sound/playerctl
 media-sound/shntool
 media-sound/spek
-media-tv/v4l-utils
+media-libs/libv4l
 media-video/droidcam
 media-video/ffmpeg
 media-video/libva-utils

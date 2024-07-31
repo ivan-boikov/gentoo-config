@@ -45,10 +45,6 @@ mpv-plugin/mpv-mpris ~amd64
 >=media-sound/pamixer-9999 **
 
 
-# fem
-app-admin/pass-git-helper ~amd64
-
-
 # ace
 games-util/mangohud ~amd64
 

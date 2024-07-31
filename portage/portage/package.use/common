@@ -47,3 +47,5 @@ sys-apps/systemd-utils boot kernel-install
 sys-kernel/gentoo-kernel modules-compress modules-sign secureboot
 
 www-misc/firefox-policy redirect
+
+sys-devel/gcc graphite

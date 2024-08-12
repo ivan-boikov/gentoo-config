@@ -1,44 +1,58 @@
-app-admin/stow
-app-admin/sudo
-app-admin/sysklogd
-app-arch/atool
-app-arch/p7zip
-app-arch/unrar
+# boot
 app-crypt/efitools
 app-crypt/signify
-app-editors/nano
-app-editors/neovim
+sys-boot/efibootmgr
+sys-boot/mokutil
+sys-fs/cryptsetup
+sys-kernel/gentoo-kernel
+sys-kernel/linux-firmware
+
+# portage
 app-eselect/eselect-repository
-app-misc/nnn
 app-portage/eix
 app-portage/euses
 app-portage/gentoolkit
 app-portage/portage-utils
-app-text/highlight
-dev-vcs/git
+
+# filesystem
+net-fs/cifs-utils
+sys-fs/btrfs-progs
+sys-fs/dosfstools
+sys-fs/ncdu
+app-misc/nnn
+sys-fs/exfatprogs
+
+# archives
+app-arch/p7zip
+app-arch/unrar
+app-arch/atool
+
+# diagnostics
+app-admin/sysklogd
 net-analyzer/iftop
 net-analyzer/nmap
 net-analyzer/traceroute
-net-dns/bind-tools
-net-firewall/ufw
-net-fs/cifs-utils
-net-misc/chrony
 net-misc/iperf
 sys-apps/lshw
 sys-apps/pciutils
 sys-apps/usbutils
-sys-boot/efibootmgr
-sys-boot/mokutil
-sys-devel/distcc
-sys-fs/btrfs-progs
-sys-fs/cryptsetup
-sys-fs/dosfstools
-sys-fs/ncdu
-sys-kernel/gentoo-kernel
-sys-kernel/linux-firmware
-virtual/cron
 sys-process/htop
 sys-process/lsof
+net-dns/bind-tools
+
+# text
+app-editors/nano
+app-editors/neovim
+dev-vcs/git
+app-text/highlight
+
+# others
+app-admin/stow
+app-admin/sudo
+net-firewall/ufw
+net-misc/chrony
+sys-devel/distcc
+virtual/cron
 sys-apps/etckeeper
 app-misc/trash-cli
 app-shells/bash-completion

@@ -20,9 +20,7 @@ app-admin/pass-otp
 app-backup/borgbackup
 app-backup/snapper
 app-crypt/pinentry
-app-emulation/qemu
 app-emulation/virt-manager
-app-emulation/winetricks
 app-misc/dragon
 app-misc/reptyr
 app-misc/tmux
@@ -36,7 +34,6 @@ app-text/pdfgrep
 dev-qt/qtstyleplugins
 dev-util/android-tools
 dev-util/shellcheck-bin
-dev-vcs/git-filter-repo
 games-util/joystick
 lxde-base/lxappearance
 media-fonts/fontawesome
@@ -72,7 +69,6 @@ net-im/signal-desktop-bin
 net-im/telegram-desktop
 net-misc/rclone
 net-misc/yt-dlp
-net-p2p/monero
 net-p2p/syncthing
 net-vpn/openvpn
 sys-apps/firejail
@@ -80,10 +76,8 @@ sys-apps/lm-sensors
 sys-apps/smartmontools
 sys-block/gparted
 sys-fs/archivemount
-sys-fs/bees
 sys-fs/btrfsmaintenance
 sys-fs/compsize
-sys-fs/exfatprogs
 sys-fs/jmtpfs
 sys-fs/simple-mtpfs
 sys-fs/fragview

@@ -16,7 +16,7 @@ dev-cpp/cppgir ~amd64
 dev-cpp/expected-lite ~amd64
 media-libs/libtgvoip ~amd64
 
-media-video/mpv::vapoursynth ~amd64
+<media-video/mpv-9999::vapoursynth **
 media-libs/vapoursynth ~amd64
 
 sys-fs/fragview ~amd64

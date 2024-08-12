@@ -24,7 +24,7 @@ app-emulation/virt-manager
 app-misc/dragon
 app-misc/reptyr
 app-misc/tmux
-app-office/libreoffice-bin
+app-office/libreoffice
 app-portage/cpuid2cpuflags
 app-shells/fzf
 app-text/pdftk

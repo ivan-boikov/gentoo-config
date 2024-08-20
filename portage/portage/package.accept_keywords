@@ -8,6 +8,11 @@ sys-fs/archivemount ~amd64
 sys-fs/jmtpfs ~amd64
 games-action/multimc-bin ~amd64
 www-misc/buku ~amd64
+dev-util/ruff ~amd64
+
+# neovim and its deps, plugins often require bleeding edge
+app-editors/neovim ~amd64
+dev-libs/tree-sitter-* ~amd64
 
 # TG and its deps
 net-im/telegram-desktop ~amd64

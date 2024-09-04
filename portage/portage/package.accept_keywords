@@ -14,6 +14,10 @@ dev-util/ruff ~amd64
 app-editors/neovim ~amd64
 dev-libs/tree-sitter-* ~amd64
 
+# tear-free on new modesetting intel driver
+=x11-base/xorg-server-9999 **
+=x11-base/xorg-drivers-9999 **
+
 # TG and its deps
 net-im/telegram-desktop ~amd64
 media-libs/tg_owt ~amd64

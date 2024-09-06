@@ -1,13 +1,14 @@
 @icommon
 
 sys-power/acpilight
+app-misc/brightnessctl
 x11-apps/igt-gpu-tools
 sys-firmware/intel-microcode
 net-vpn/networkmanager-openvpn
-x11-drivers/xf86-video-intel
 media-libs/libva-intel-driver
 sys-power/tlp
 sys-power/powertop
 gnome-extra/nm-applet
 # fight flash fraud
 sys-block/f3
+gui-apps/organicmaps

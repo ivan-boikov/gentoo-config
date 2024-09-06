@@ -18,6 +18,9 @@ sys-fs/fragview ~amd64
 
 # laptop stuff
 x11-apps/igt-gpu-tools ~amd64
+# tear-free on new modesetting intel driver
+=x11-base/xorg-server-9999 **
+=x11-base/xorg-drivers-9999 **
 
 
 # vapoursynth
@@ -34,6 +37,10 @@ dev-libs/supercop ~amd64
 app-misc/dragon ~amd64
 
 media-sound/ncpamixer ~amd64
+
+app-misc/brightnessctl ~amd64
+
+=gui-apps/organicmaps-9999 **
 
 # remote control of players
 mpv-plugin/mpv-mpris ~amd64

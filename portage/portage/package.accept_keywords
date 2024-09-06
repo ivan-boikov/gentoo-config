@@ -1,4 +1,4 @@
-# last check: 2024-03-01
+# last check: 2024-09-06
 # Gentoo
 media-video/droidcam ~amd64
 media-sound/spek ~amd64
@@ -14,23 +14,16 @@ dev-util/ruff ~amd64
 app-editors/neovim ~amd64
 dev-libs/tree-sitter-* ~amd64
 
-# TG and its deps
-net-im/telegram-desktop ~amd64
-media-libs/tg_owt ~amd64
-dev-cpp/cppgir ~amd64
-dev-cpp/expected-lite ~amd64
-media-libs/libtgvoip ~amd64
-
-<media-video/mpv-9999::vapoursynth **
-media-libs/vapoursynth ~amd64
-
 sys-fs/fragview ~amd64
-
-dev-vcs/git-filter-repo ~amd64
 
 # laptop stuff
 x11-apps/igt-gpu-tools ~amd64
-sys-power/tlp ~amd64
+
+
+# vapoursynth
+<media-video/mpv-9999::vapoursynth **
+media-libs/vapoursynth ~amd64
+
 
 # GURU
 # monero and its deps
@@ -44,10 +37,6 @@ media-sound/ncpamixer ~amd64
 
 # remote control of players
 mpv-plugin/mpv-mpris ~amd64
-
-
-# ArchFeh
->=media-sound/pamixer-9999 **
 
 
 # ace

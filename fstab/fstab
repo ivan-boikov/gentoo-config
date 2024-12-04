@@ -35,6 +35,6 @@ tmpfs /tmp             tmpfs rw,nosuid,noatime,nodev,size=4G,mode=1777,rootconte
 # speeding up emerges
 tmpfs /var/tmp/portage tmpfs rw,nosuid,noatime,nodev,size=12G,mode=775,uid=portage,gid=portage,rootcontext=system_u:object_r:tmp_t 0 0
 
-UUID=364f2509-45c3-4a5c-b232-2654160439a2 /media/wdblue ext4 rw,nofail,noatime 0 0
-
-UUID=1c9f0b6a-a8b5-4a7a-959f-821051b35107 /mnt/wdblue0  btrfs noatime,compress-force=zstd,autodefrag,subvol=@          0 0
+UUID=161c7a95-7dbd-4111-9aa0-c5417a92f022 /mnt/tsb_16_0 btrfs nofail,noatime,nodev,nosuid,compress-force=zstd,autodefrag,subvol=@ 0 2
+UUID=1c9f0b6a-a8b5-4a7a-959f-821051b35107 /mnt/wdb_04_0 btrfs nofail,noatime,nodev,nosuid,compress-force=zstd,autodefrag,subvol=@ 0 0
+UUID=364f2509-45c3-4a5c-b232-2654160439a2 /mnt/wdb_04_1 ext4  nofail,noatime,nodev,nosuid                                         0 0

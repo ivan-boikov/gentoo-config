@@ -43,6 +43,7 @@ dev-util/shellcheck-bin
 dev-util/xxd
 games-util/joystick
 lxde-base/lxappearance
+media-fonts/corefonts
 media-fonts/fira-code
 media-fonts/fontawesome
 media-fonts/fonts-meta

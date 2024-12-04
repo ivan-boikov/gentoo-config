@@ -29,7 +29,6 @@ app-office/libreoffice
 app-portage/cpuid2cpuflags
 app-shells/fzf
 app-text/aspell
-app-text/pandoc
 app-text/pdfgrep
 app-text/pdftk
 app-text/xournalpp

@@ -18,6 +18,9 @@ media-sound/pulseaudio -daemon
 # sound-server replaces pulseaudio daemon
 media-video/pipewire pipewire-alsa sound-server jack-sdk
 
+# allow recording desktop sound
+media-video/ffmpeg pulseaudio
+
 # allows ssh -X
 x11-base/xorg-server xcsecurity
 
@@ -31,7 +34,7 @@ virtual/wine proton
 
 sys-libs/zlib minizip
 
-dev-python/PyQt5 -opengl
+dev-python/pyqt5 -opengl
 
 app-misc/nnn gitstatus
 

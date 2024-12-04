@@ -1,0 +1,60 @@
+diff --git a/mnamer/setting_store.py b/mnamer/setting_store.py
+index 8981d33..29c1158 100644
+--- a/mnamer/setting_store.py
++++ b/mnamer/setting_store.py
+@@ -217,6 +217,15 @@ class SettingStore:
+             help="--episode-format: set episode renaming format specification",
+         ).as_dict(),
+     )
++    symlink: bool = dataclasses.field(
++        default=False,
++        metadata=SettingSpec(
++            action="store_true",
++            flags=["--symlink"],
++            group=SettingType.PARAMETER,
++            help="--symlink: leaves a trailing symlink",
++        ).as_dict(),
++    )
+ 
+     # directive attributes -----------------------------------------------------
+ 
+diff --git a/mnamer/target.py b/mnamer/target.py
+index cd9927e..f012eda 100644
+--- a/mnamer/target.py
++++ b/mnamer/target.py
+@@ -2,6 +2,7 @@ from __future__ import annotations
+ 
+ import datetime as dt
+ from os import path
++from os import symlink
+ from pathlib import Path
+ from shutil import move
+ from typing import Any, ClassVar, Type
+@@ -242,7 +243,14 @@ class Target:
+         """Performs the action of renaming and/or moving a file."""
+         destination_path = Path(self.destination).resolve()
+         destination_path.parent.mkdir(parents=True, exist_ok=True)
++        if path.islink(destination_path) == True:
++            print("Skipped symlink")
++            return
+         try:
+             move(str(self.source), destination_path)
++            if self._settings.symlink:
++                if path.islink(destination_path) == False:
++                    symlink(destination_path, str(self.source))
++
+         except OSError:  # pragma: no cover
+             raise MnamerException
+diff --git a/mnamer/utils.py b/mnamer/utils.py
+index 84df787..a77c4ed 100644
+--- a/mnamer/utils.py
++++ b/mnamer/utils.py
+@@ -141,6 +141,8 @@ def is_subtitle(container: str | Path | None) -> bool:
+         return False
+     return str(container).endswith(tuple(SUBTITLE_CONTAINERS))
+ 
++def is_symlink(path: Path) -> str:
++    return os.path.islink(str(Path))
+ 
+ def get_session() -> requests_cache.CachedSession:
+     """Convenience function that returns request-cache session singleton."""

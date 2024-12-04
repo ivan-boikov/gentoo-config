@@ -40,8 +40,10 @@ dev-qt/qtstyleplugins
 dev-util/android-tools
 dev-util/ruff
 dev-util/shellcheck-bin
+dev-util/xxd
 games-util/joystick
 lxde-base/lxappearance
+media-fonts/corefonts
 media-fonts/fira-code
 media-fonts/fontawesome
 media-fonts/fonts-meta
@@ -59,6 +61,7 @@ media-sound/opus-tools
 media-sound/playerctl
 media-sound/shntool
 media-sound/spek
+media-sound/qpwgraph
 media-video/droidcam
 media-video/ffmpeg
 media-video/libva-utils

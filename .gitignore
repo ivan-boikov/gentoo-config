@@ -12,4 +12,4 @@ libvirt
 kernel/kernel/preinst.d
 
 # https://wiki.gentoo.org/wiki/.keep_file
-.keep-*
+.keep_*

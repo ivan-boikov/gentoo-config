@@ -10,6 +10,8 @@ games-action/multimc-bin ~amd64
 www-misc/buku ~amd64
 dev-util/ruff ~amd64
 
+media-sound/qpwgraph ~amd64
+
 # neovim and its deps, plugins often require bleeding edge
 app-editors/neovim ~amd64
 dev-libs/tree-sitter-* ~amd64

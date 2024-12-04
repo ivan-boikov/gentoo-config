@@ -59,6 +59,7 @@ media-sound/opus-tools
 media-sound/playerctl
 media-sound/shntool
 media-sound/spek
+media-sound/qpwgraph
 media-video/droidcam
 media-video/ffmpeg
 media-video/libva-utils

@@ -11,3 +11,5 @@ libvirt
 # installed by installkernel = don't care
 kernel/kernel/preinst.d
 
+# https://wiki.gentoo.org/wiki/.keep_file
+.keep-*

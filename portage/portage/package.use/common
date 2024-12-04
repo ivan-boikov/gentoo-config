@@ -34,7 +34,7 @@ virtual/wine proton
 
 sys-libs/zlib minizip
 
-dev-python/PyQt5 -opengl
+dev-python/pyqt5 -opengl
 
 app-misc/nnn gitstatus
 

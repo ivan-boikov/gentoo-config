@@ -54,3 +54,5 @@ www-misc/firefox-policy redirect
 sys-devel/gcc graphite
 
 media-libs/libv4l utils
+
+x11-drivers/nvidia-drivers abi_x86_32

@@ -61,3 +61,5 @@ games-action/polymc qt6
 app-crypt/pinentry -gtk qt6
 
 app-office/libreoffice -gtk3 -gtk4 qt6
+
+x11-drivers/nvidia-drivers abi_x86_32

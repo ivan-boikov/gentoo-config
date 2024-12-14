@@ -2,6 +2,6 @@
 =sys-devel/gcc-14.2.1_p20241116
 =sys-libs/glibc-2.40-r5
 # llvm and clang must have same version!
-=sys-devel/llvm-19.1.4
-=sys-devel/llvmgold-19
-=sys-devel/clang-19.1.4
+=llvm-core/llvm-19.1.4
+=llvm-core/llvmgold-19
+=llvm-core/clang-19.1.4

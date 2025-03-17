@@ -1,8 +1,7 @@
 app-alternatives/sh dash -bash
 app-shells/dash static
 
-# fuck DRM
-www-client/firefox-bin -gmp-autoupdate
+www-client/firefox eme-free -pgo -gmp-autoupdate pulseaudio openh264 hwaccel system-png wasm-sandbox -telemetry
 
 media-video/mpv::vapoursynth vapoursynth
 

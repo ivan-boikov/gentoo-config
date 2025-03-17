@@ -95,7 +95,7 @@ sys-fs/simple-mtpfs
 sys-power/cpupower
 virtual/jre
 virtual/wine
-www-client/firefox-bin
+www-client/firefox
 www-client/ungoogled-chromium-bin
 www-misc/arkenfox
 www-misc/buku

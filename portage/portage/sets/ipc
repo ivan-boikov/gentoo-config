@@ -4,7 +4,6 @@ app-backup/borgmatic
 app-emulation/dxvk
 app-emulation/vkd3d-proton
 dev-util/vulkan-tools
-games-util/mangohud::ace
 games-action/polymc
 media-sound/mpd
 www-apps/hugo

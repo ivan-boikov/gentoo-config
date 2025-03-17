@@ -55,9 +55,6 @@ mpv-plugin/mpv-mpris ~amd64
 # hex
 dev-util/xxd ~amd64
 
-# ace
-games-util/mangohud ~amd64
-
 
 # genfox
 www-misc/arkenfox ~amd64

@@ -1,8 +1,7 @@
 app-alternatives/sh dash -bash
 app-shells/dash static
 
-# fuck DRM
-www-client/firefox-bin -gmp-autoupdate
+www-client/firefox eme-free -pgo -gmp-autoupdate pulseaudio openh264 hwaccel system-png wasm-sandbox -telemetry
 
 media-video/mpv::vapoursynth vapoursynth
 
@@ -49,6 +48,8 @@ sys-apps/systemd-utils boot kernel-install
 # secure boot
 sys-kernel/gentoo-kernel modules-compress modules-sign secureboot
 
+net-libs/nodejs npm
+
 www-misc/firefox-policy redirect
 
 sys-devel/gcc graphite
@@ -56,3 +57,5 @@ sys-devel/gcc graphite
 media-libs/libv4l utils
 
 x11-drivers/nvidia-drivers abi_x86_32
+
+games-action/polymc qt6

@@ -56,6 +56,10 @@ games-util/mangohud ~amd64
 www-misc/arkenfox ~amd64
 
 
+# polymc
+games-action/polymc ~amd64
+
+
 # ikb-overlay
 # mnamer and its deps
 media-video/mnamer ~amd64

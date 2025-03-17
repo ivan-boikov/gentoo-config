@@ -53,3 +53,5 @@ www-misc/firefox-policy redirect
 sys-devel/gcc graphite
 
 media-libs/libv4l utils
+
+games-action/polymc qt6

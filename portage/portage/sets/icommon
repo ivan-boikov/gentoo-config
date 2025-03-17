@@ -34,8 +34,8 @@ app-text/pdftk
 app-text/xournalpp
 app-text/zathura-meta
 dev-debug/strace
+dev-java/openjdk
 dev-python/pynvim
-dev-qt/qtstyleplugins
 dev-util/android-tools
 dev-util/ruff
 dev-util/shellcheck-bin
@@ -93,9 +93,8 @@ sys-fs/fragview
 sys-fs/jmtpfs
 sys-fs/simple-mtpfs
 sys-power/cpupower
-virtual/jre
 virtual/wine
-www-client/firefox-bin
+www-client/firefox
 www-client/ungoogled-chromium-bin
 www-misc/arkenfox
 www-misc/buku

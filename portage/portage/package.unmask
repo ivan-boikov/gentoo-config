@@ -1,7 +1,23 @@
-=sys-devel/binutils-2.43-r2
-=sys-devel/gcc-14.2.1_p20241116
-=sys-libs/glibc-2.40-r5
-# llvm and clang must have same version!
-=llvm-core/llvm-19.1.4
+# last check: 2025-03-17
+=sys-devel/binutils-2.44
+
+# # Most GCC upgrades are as simple as switching the compiler version (here from 10.3.0 to 11.2.0) and rebuilding dev-build/libtool:
+# emerge --ask --oneshot sys-devel/gcc
+# gcc-config --list-profiles
+# [1] x86_64-pc-linux-gnu-10.3.0 *
+# [2] x86_64-pc-linux-gnu-11.2.0
+# gcc-config 2
+# source /etc/profile
+# emerge --ask --oneshot --usepkg=n dev-build/libtool
+# # Check the current version number and then uninstall the old version:
+# gcc --version
+# emerge --ask --depclean sys-devel/gcc:10.3.0
+# Boost is also a piece of shit that needs to be rebuilt just in case
+=sys-devel/gcc-14.2.1_p20241221
+
+=sys-libs/glibc-2.40-r8
+
+# llvm and clang must have the same version!
+=llvm-core/llvm-19.1.7
 =llvm-core/llvmgold-19
-=llvm-core/clang-19.1.4
+=llvm-core/clang-19.1.7

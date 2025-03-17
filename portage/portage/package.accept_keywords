@@ -10,6 +10,11 @@ games-action/multimc-bin ~amd64
 www-misc/buku ~amd64
 dev-util/ruff ~amd64
 
+# ffox and its deps
+www-client/firefox ~amd64
+dev-libs/nss ~amd64
+media-libs/libpng ~amd64
+
 media-sound/qpwgraph ~amd64
 
 # neovim and its deps, plugins often require bleeding edge
@@ -56,6 +61,10 @@ games-util/mangohud ~amd64
 
 # genfox
 www-misc/arkenfox ~amd64
+
+
+# polymc
+games-action/polymc ~amd64
 
 
 # ikb-overlay

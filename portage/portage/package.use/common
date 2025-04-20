@@ -57,3 +57,5 @@ sys-devel/gcc graphite
 media-libs/libv4l utils
 
 games-action/polymc qt6
+
+app-crypt/pinentry -gtk qt6

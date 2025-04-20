@@ -64,7 +64,7 @@ BTRFS_BALANCE_PERIOD="weekly"
 # Note: default values should not disturb normal work but may not reclaim
 # enough block groups. If you observe that, add higher values but beware that
 # this will increase IO load on the system.
-BTRFS_BALANCE_DUSAGE="5 10"
+BTRFS_BALANCE_DUSAGE="25 50"
 
 ## Path:        System/File systems/btrfs
 ## Type:        string
@@ -76,7 +76,7 @@ BTRFS_BALANCE_DUSAGE="5 10"
 # Note: default values should not disturb normal work but may not reclaim
 # enough block groups. If you observe that, add higher values but beware that
 # this will increase IO load on the system.
-BTRFS_BALANCE_MUSAGE="5"
+BTRFS_BALANCE_MUSAGE="50"
 
 ## Path:        System/File systems/btrfs
 ## Type:        string

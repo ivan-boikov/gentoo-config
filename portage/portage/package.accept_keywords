@@ -19,7 +19,9 @@ media-sound/qpwgraph ~amd64
 
 # neovim and its deps, plugins often require bleeding edge
 app-editors/neovim ~amd64
-dev-libs/tree-sitter-* ~amd64
+dev-libs/tree-sitter* ~amd64
+dev-lua/luv ~amd64
+dev-libs/libutf8proc ~amd64
 
 sys-fs/fragview ~amd64
 

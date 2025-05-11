@@ -23,15 +23,16 @@
 #       documentation for details on setting a label. To obtain the UUID, use
 #       the blkid(8) command.
 
-UUID=B36E-608F                            /boot       vfat  noatime                                                  0 2
-UUID=6e72e954-c358-495c-90ae-48061ab0cbd8 /           btrfs noatime,compress-force=zstd,autodefrag,subvol=@          0 1
-UUID=6e72e954-c358-495c-90ae-48061ab0cbd8 /home       btrfs noatime,compress-force=zstd,autodefrag,subvol=@home      0 2
-UUID=6e72e954-c358-495c-90ae-48061ab0cbd8 /.snapshots btrfs noatime,compress-force=zstd,autodefrag,subvol=@snapshots 0 2
-UUID=6e72e954-c358-495c-90ae-48061ab0cbd8 /.swap      btrfs noatime,subvol=@swap                                     0 0
-/.swap/swapfile                           none        swap  sw,loop                                                  0 0
+# btrfs compression is shared by the entire filesystem
+UUID=64B1-97A7                            /boot                vfat  noatime                                           0 2
+UUID=f98d6e1a-a1d2-436b-ab1e-dbfa8dcee9fb /                    btrfs noatime,compress=lzo,autodefrag,subvol=@          0 1
+UUID=f98d6e1a-a1d2-436b-ab1e-dbfa8dcee9fb /home                btrfs noatime,compress=lzo,autodefrag,subvol=@home      0 2
+UUID=f98d6e1a-a1d2-436b-ab1e-dbfa8dcee9fb /var/vm              btrfs noatime,compress=lzo,autodefrag,subvol=@vm        0 2
+UUID=f98d6e1a-a1d2-436b-ab1e-dbfa8dcee9fb /var/cache/distfiles btrfs noatime,compress=lzo,autodefrag,subvol=@distfiles 0 2
+UUID=5ee2653c-67ed-4582-a9ac-2ebbe984bb28 none                 swap  sw                                                0 0
 
 # /tmp is not mounted as tmpfs automatically by OpenRC
-tmpfs /tmp             tmpfs rw,nosuid,noatime,nodev,size=4G,mode=1777,rootcontext=system_u:object_r:tmp_t                        0 0
+tmpfs /tmp tmpfs rw,nosuid,noatime,nodev,size=12G,mode=1777,rootcontext=system_u:object_r:tmp_t 0 0
 # speeding up emerges
 tmpfs /var/tmp/portage tmpfs rw,nosuid,noatime,nodev,size=12G,mode=775,uid=portage,gid=portage,rootcontext=system_u:object_r:tmp_t 0 0
 

@@ -14,6 +14,7 @@ net-mail/isync
 www-client/w3m
 
 # others
+app-admin/eclean-kernel
 app-admin/pass
 app-admin/pass-git-helper
 app-admin/pass-otp
@@ -29,6 +30,7 @@ app-office/libreoffice
 app-portage/cpuid2cpuflags
 app-shells/fzf
 app-text/aspell
+app-text/pandoc-bin
 app-text/pdfgrep
 app-text/pdftk
 app-text/xournalpp
@@ -74,6 +76,7 @@ net-fs/samba
 net-ftp/lftp
 net-im/signal-desktop-bin
 net-im/telegram-desktop
+net-libs/nodejs
 net-misc/rclone
 net-misc/yt-dlp
 net-p2p/monero
@@ -81,8 +84,10 @@ net-p2p/syncthing
 net-vpn/openvpn
 net-wireless/iw
 net-wireless/wireless-tools
+sys-apps/ethtool
 sys-apps/firejail
 sys-apps/lm-sensors
+sys-apps/hdparm
 sys-apps/pv
 sys-apps/smartmontools
 sys-block/gparted
@@ -94,7 +99,7 @@ sys-fs/jmtpfs
 sys-fs/simple-mtpfs
 sys-power/cpupower
 virtual/wine
-www-client/firefox
+www-client/firefox:rapid
 www-client/ungoogled-chromium-bin
 www-misc/arkenfox
 www-misc/buku

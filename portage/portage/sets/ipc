@@ -4,7 +4,10 @@ app-backup/borgmatic
 app-emulation/dxvk
 app-emulation/vkd3d-proton
 dev-util/vulkan-tools
+# required for polymc
+dev-qt/qt5compat
 games-action/polymc
 media-sound/mpd
 www-apps/hugo
 x11-misc/vdpauinfo
+sys-fs/mergerfs

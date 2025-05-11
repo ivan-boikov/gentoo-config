@@ -29,6 +29,7 @@ UUID=f98d6e1a-a1d2-436b-ab1e-dbfa8dcee9fb /                    btrfs noatime,com
 UUID=f98d6e1a-a1d2-436b-ab1e-dbfa8dcee9fb /home                btrfs noatime,compress=lzo,autodefrag,subvol=@home      0 2
 UUID=f98d6e1a-a1d2-436b-ab1e-dbfa8dcee9fb /var/vm              btrfs noatime,compress=lzo,autodefrag,subvol=@vm        0 2
 UUID=f98d6e1a-a1d2-436b-ab1e-dbfa8dcee9fb /var/cache/distfiles btrfs noatime,compress=lzo,autodefrag,subvol=@distfiles 0 2
+UUID=f98d6e1a-a1d2-436b-ab1e-dbfa8dcee9fb /var/cache/binpkgs   btrfs noatime,compress=lzo,autodefrag,subvol=@binpkgs   0 2
 UUID=5ee2653c-67ed-4582-a9ac-2ebbe984bb28 none                 swap  sw                                                0 0
 
 # /tmp is not mounted as tmpfs automatically by OpenRC

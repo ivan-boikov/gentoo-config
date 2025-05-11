@@ -59,5 +59,6 @@ media-libs/libv4l utils
 x11-drivers/nvidia-drivers abi_x86_32
 
 games-action/polymc qt6
+dev-qt/qt5compat icu
 
 app-crypt/pinentry -gtk qt6

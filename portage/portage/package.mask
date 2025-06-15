@@ -7,5 +7,3 @@ sys-devel/binutils
 sys-devel/gcc
 sys-libs/glibc
 llvm-core/llvm
-llvm-core/llvmgold
-llvm-core/clang

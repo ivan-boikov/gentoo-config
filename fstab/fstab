@@ -23,13 +23,13 @@
 #       documentation for details on setting a label. To obtain the UUID, use
 #       the blkid(8) command.
 
-UUID=459cc4ae-8779-4362-92b4-2b5f54c336da /boot       ext2  noatime                                                  0 2
-UUID=D0E2-4312                            /boot/efi   vfat  noatime                                                  0 2
-UUID=7f436ba9-0529-4a6a-8bb2-46f8ef203968 /           btrfs noatime,compress-force=zstd,autodefrag,subvol=@          0 1
-UUID=7f436ba9-0529-4a6a-8bb2-46f8ef203968 /home       btrfs noatime,compress-force=zstd,autodefrag,subvol=@home      0 2
-UUID=7f436ba9-0529-4a6a-8bb2-46f8ef203968 /.snapshots btrfs noatime,compress-force=zstd,autodefrag,subvol=@snapshots 0 2
-UUID=7f436ba9-0529-4a6a-8bb2-46f8ef203968 /.swap      btrfs noatime,subvol=@swap                                     0 0
-/.swap/swapfile                           none        swap  sw,loop                                                  0 0
+UUID=22C4-F8AF                            /boot                vfat  noatime                                           0 2
+UUID=2817c671-ffa6-4237-a8cf-6ff9bebba2d7 /                    btrfs noatime,compress=lzo,autodefrag,subvol=@          0 1
+UUID=2817c671-ffa6-4237-a8cf-6ff9bebba2d7 /home                btrfs noatime,compress=lzo,autodefrag,subvol=@home      0 2
+UUID=2817c671-ffa6-4237-a8cf-6ff9bebba2d7 /var/vm              btrfs noatime,compress=lzo,autodefrag,subvol=@vm        0 2
+UUID=2817c671-ffa6-4237-a8cf-6ff9bebba2d7 /var/cache/distfiles btrfs noatime,compress=lzo,autodefrag,subvol=@distfiles 0 2
+UUID=2817c671-ffa6-4237-a8cf-6ff9bebba2d7 /var/cache/binpkgs   btrfs noatime,compress=lzo,autodefrag,subvol=@binpkgs   0 2
+UUID=aeae28b8-d193-40f0-a8a0-67c6a1b2dcdb none                 swap  sw                                                0 0
 
 # /tmp is not mounted as tmpfs automatically by OpenRC
 tmpfs /tmp             tmpfs rw,nosuid,noatime,nodev,size=12G,mode=1777,rootcontext=system_u:object_r:tmp_t                        0 0

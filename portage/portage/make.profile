@@ -1,1 +1,1 @@
-../../../../var/db/repos/gentoo/profiles/default/linux/amd64/23.0/split-usr/hardened/selinux
+../../../../var/db/repos/gentoo/profiles/default/linux/amd64/23.0/hardened/selinux

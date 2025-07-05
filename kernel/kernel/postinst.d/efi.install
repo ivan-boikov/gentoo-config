@@ -8,7 +8,7 @@
 # adapted from https://forums.gentoo.org/viewtopic-p-8810619.html
 
 ver=${1}
-mkdir -pv "/boot/efi/gentoo"
-cp -v "/boot/config-${ver}" "/boot/efi/EFI/gentoo/config"
-cp -v "/boot/vmlinuz-${ver}.efi" "/boot/efi/EFI/gentoo/bootx64.efi"
+mkdir -pv "/boot/efi/"
+#cp -v "/boot/config-${ver}" "/boot/efi/config"
+cp -v "/boot/vmlinuz-${ver}.efi" "/boot/efi/bootx64.efi"
 #rm -v /boot/*${ver}*

@@ -32,9 +32,9 @@ UUID=2817c671-ffa6-4237-a8cf-6ff9bebba2d7 /var/cache/binpkgs   btrfs noatime,com
 UUID=aeae28b8-d193-40f0-a8a0-67c6a1b2dcdb none                 swap  sw                                                0 0
 
 # /tmp is not mounted as tmpfs automatically by OpenRC
-tmpfs /tmp             tmpfs rw,nosuid,noatime,nodev,size=12G,mode=1777,rootcontext=system_u:object_r:tmp_t                        0 0
+tmpfs /tmp             tmpfs rw,nosuid,noatime,nodev,size=12G,mode=1777,rootcontext=system_u:object_r:tmp_t:s0                        0 0
 # speeding up emerges
-tmpfs /var/tmp/portage tmpfs rw,nosuid,noatime,nodev,size=12G,mode=775,uid=portage,gid=portage,rootcontext=system_u:object_r:tmp_t 0 0
+tmpfs /var/tmp/portage tmpfs rw,nosuid,noatime,nodev,size=12G,mode=775,uid=portage,gid=portage,rootcontext=system_u:object_r:tmp_t:s0 0 0
 
 UUID=364f2509-45c3-4a5c-b232-2654160439a2 /media/wdblue ext4 rw,nofail,noatime 0 0
 

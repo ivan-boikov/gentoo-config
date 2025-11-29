@@ -47,6 +47,8 @@ media-sound/ncpamixer ~amd64
 # remote control of players
 mpv-plugin/mpv-mpris ~amd64
 
+sys-process/task-spooler ~amd64
+
 # hex
 dev-util/xxd ~amd64
 

@@ -97,6 +97,7 @@ sys-fs/compsize
 sys-fs/fragview
 sys-fs/jmtpfs
 sys-fs/simple-mtpfs
+sys-process/task-spooler
 sys-power/cpupower
 virtual/wine
 www-client/firefox:rapid

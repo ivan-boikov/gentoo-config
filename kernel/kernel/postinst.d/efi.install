@@ -9,6 +9,4 @@
 
 ver=${1}
 mkdir -pv "/boot/efi/gentoo"
-cp -v "/boot/config-${ver}" "/boot/efi/gentoo/config"
-cp -v "/boot/vmlinuz-${ver}.efi" "/boot/efi/gentoo/bootx64.efi"
-#rm -v /boot/*${ver}*
+cp -v "/boot/efi/Linux/gentoo-${ver}.efi" "/boot/efi/gentoo/bootx64.efi" && rm -v "/boot/efi/Linux/gentoo-${ver}.efi"

@@ -7,21 +7,14 @@ sys-fs/archivemount ~amd64
 sys-fs/jmtpfs ~amd64
 games-action/multimc-bin ~amd64
 www-misc/buku ~amd64
+media-sound/qpwgraph ~amd64
+app-editors/neovim ~amd64
+sys-fs/fragview ~amd64
 
-# ffox and its deps
+# firefox and its deps
 www-client/firefox ~amd64
 dev-libs/nss ~amd64
 media-libs/libpng ~amd64
-
-media-sound/qpwgraph ~amd64
-
-# neovim and its deps, plugins often require bleeding edge
-app-editors/neovim ~amd64
-dev-libs/tree-sitter* ~amd64
-dev-lua/luv ~amd64
-dev-libs/libutf8proc ~amd64
-
-sys-fs/fragview ~amd64
 
 # laptop stuff
 x11-apps/igt-gpu-tools ~amd64

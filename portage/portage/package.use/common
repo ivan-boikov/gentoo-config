@@ -59,3 +59,5 @@ media-libs/libv4l utils
 games-action/polymc qt6
 
 app-crypt/pinentry -gtk qt6
+
+app-office/libreoffice -gtk3 -gtk4 qt6

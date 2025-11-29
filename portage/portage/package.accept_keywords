@@ -5,7 +5,6 @@ media-sound/spek ~amd64
 games-util/joystick ~amd64
 sys-fs/archivemount ~amd64
 sys-fs/jmtpfs ~amd64
-games-action/multimc-bin ~amd64
 www-misc/buku ~amd64
 media-sound/qpwgraph ~amd64
 app-editors/neovim ~amd64

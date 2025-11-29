@@ -2,7 +2,6 @@
 # Gentoo
 media-video/droidcam ~amd64
 media-sound/spek ~amd64
-sys-boot/mokutil ~amd64
 games-util/joystick ~amd64
 sys-fs/archivemount ~amd64
 sys-fs/jmtpfs ~amd64

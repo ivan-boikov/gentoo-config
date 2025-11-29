@@ -33,9 +33,11 @@ UUID=f98d6e1a-a1d2-436b-ab1e-dbfa8dcee9fb /var/cache/binpkgs   btrfs noatime,com
 UUID=5ee2653c-67ed-4582-a9ac-2ebbe984bb28 none                 swap  sw                                                0 0
 
 # /tmp is not mounted as tmpfs automatically by OpenRC
-tmpfs /tmp tmpfs rw,nosuid,noatime,nodev,size=12G,mode=1777,rootcontext=system_u:object_r:tmp_t 0 0
+tmpfs /tmp tmpfs rw,nosuid,noatime,nodev,size=24G,mode=1777,rootcontext=system_u:object_r:tmp_t:s0 0 0
 # speeding up emerges
-tmpfs /var/tmp/portage tmpfs rw,nosuid,noatime,nodev,size=12G,mode=775,uid=portage,gid=portage,rootcontext=system_u:object_r:tmp_t 0 0
+tmpfs /var/tmp/portage tmpfs rw,nosuid,noatime,nodev,size=24G,mode=775,uid=portage,gid=portage,rootcontext=system_u:object_r:tmp_t:s0 0 0
+
+tmpfs /run tmpfs mode=0755,nosuid,nodev,rootcontext=system_u:object_r:var_run_t:s0 0 0
 
 UUID=161c7a95-7dbd-4111-9aa0-c5417a92f022 /mnt/tsb_16_0 btrfs nofail,noatime,nodev,nosuid,compress-force=zstd,autodefrag,subvol=@ 0 2
 UUID=1c9f0b6a-a8b5-4a7a-959f-821051b35107 /mnt/wdb_04_0 btrfs nofail,noatime,nodev,nosuid,compress-force=zstd,autodefrag,subvol=@ 0 0

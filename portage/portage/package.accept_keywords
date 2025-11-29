@@ -7,7 +7,6 @@ sys-fs/archivemount ~amd64
 sys-fs/jmtpfs ~amd64
 games-action/multimc-bin ~amd64
 www-misc/buku ~amd64
-dev-util/ruff ~amd64
 
 # ffox and its deps
 www-client/firefox ~amd64
